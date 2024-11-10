@@ -3,7 +3,7 @@
 PacletObject[
   <|
     "Name" -> "Yurie/List",
-    "Description" -> "Light paclet template",
+    "Description" -> "List manipulation",
     "Creator" -> "Yurie",
     "SourceControlURL" -> "https://github.com/yuriever/Yurie-List",
     "License" -> "MIT",

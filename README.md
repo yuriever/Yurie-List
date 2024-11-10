@@ -1,6 +1,6 @@
 # Yurie/List
 
-Light paclet template.
+List manipulation.
 
 ## Documentation
 
