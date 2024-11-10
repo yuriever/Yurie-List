@@ -26,9 +26,6 @@ splitHoldSequence::usage =
 deleteEmptyList::usage =
     "delete all empty list in expressions.";
 
-separateBy::usage =
-    "separate the elements by whether or not satisfying the criteria.";
-
 
 (* ::Section:: *)
 (*Private*)
@@ -91,17 +88,6 @@ splitHoldSequence[(fun:Hold|HoldComplete)[args___]] :=
 
 deleteEmptyList[expr_] :=
     expr//ReplaceRepeated[list_List:>DeleteCases[list,{},All]];
-
-
-(* ::Subsubsection:: *)
-(*separateBy*)
-
-
-separateBy[crit_][expr_] :=
-    {
-        Select[expr,crit[#]&],
-        Select[expr,!crit[#]&]
-    };
 
 
 (* ::Subsection:: *)
