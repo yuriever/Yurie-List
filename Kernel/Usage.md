@@ -20,5 +20,3 @@
 * `#!wl splitHoldSequence` - split Hold[exprs___] into list of Hold[expr].
 
 * `#!wl deleteEmptyList` - delete all empty list in expressions.
-
-* `#!wl separateBy` - separate the elements by whether or not satisfying the criteria.

@@ -29,6 +29,3 @@ splitHoldSequence::usage =
 
 deleteEmptyList::usage =
 	"delete all empty list in expressions.";
-
-separateBy::usage =
-	"separate the elements by whether or not satisfying the criteria.";

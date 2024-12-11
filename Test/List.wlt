@@ -60,43 +60,11 @@ VerificationTest[
 ]
 
 VerificationTest[
-	separateBy[EvenQ][{1, 2, 3, 4}]
-	,
-	{{2, 4}, {1, 3}}
-	,
-	TestID->"7-List.nb"
-]
-
-VerificationTest[
-	separateBy[EvenQ][{4, 3, 2, 1}]
-	,
-	{{4, 2}, {3, 1}}
-	,
-	TestID->"8-List.nb"
-]
-
-VerificationTest[
-	separateBy[Not @* FreeQ[g]][g[x]*h[x]]
-	,
-	{g[x], h[x]}
-	,
-	TestID->"9-List.nb"
-]
-
-VerificationTest[
-	separateBy[Not @* FreeQ[g]][f[x]*g[x]]
-	,
-	{g[x], f[x]}
-	,
-	TestID->"10-List.nb"
-]
-
-VerificationTest[
 	associationTranspose[{Association[a -> 1, b -> 1], Association[a -> 2, b -> 2], Association[a -> 3, b -> 3]}]
 	,
 	Association[a -> {1, 2, 3}, b -> {1, 2, 3}]
 	,
-	TestID->"11-List.nb"
+	TestID->"7-List.nb"
 ]
 
 VerificationTest[
@@ -104,7 +72,7 @@ VerificationTest[
 	,
 	{Association[a -> 1, b -> 1], Association[a -> 2, b -> 2], Association[a -> 3, b -> 3]}
 	,
-	TestID->"12-List.nb"
+	TestID->"8-List.nb"
 ]
 
 VerificationTest[
@@ -112,7 +80,7 @@ VerificationTest[
 	,
 	Association[a -> Association[x -> 1, y -> 2, z -> 3], b -> Association[x -> 1, y -> 2, z -> 3]]
 	,
-	TestID->"13-List.nb"
+	TestID->"9-List.nb"
 ]
 
 VerificationTest[
@@ -120,7 +88,7 @@ VerificationTest[
 	,
 	Association[a -> f[{1, 2, 3}], b -> g[{1, 2, 3}], c -> {1}]
 	,
-	TestID->"14-List.nb"
+	TestID->"10-List.nb"
 ]
 
 VerificationTest[
@@ -128,7 +96,7 @@ VerificationTest[
 	,
 	Association[a -> f[{1, 2, 3}], b -> g[{1, 2, 3}], c -> g[{1}]]
 	,
-	TestID->"15-List.nb"
+	TestID->"11-List.nb"
 ]
 
 VerificationTest[
@@ -136,7 +104,7 @@ VerificationTest[
 	,
 	Association[a -> {1, 2}]
 	,
-	TestID->"16-List.nb"
+	TestID->"12-List.nb"
 ]
 
 VerificationTest[
@@ -144,7 +112,7 @@ VerificationTest[
 	,
 	Association[]
 	,
-	TestID->"17-List.nb"
+	TestID->"13-List.nb"
 ]
 
 VerificationTest[
@@ -154,7 +122,7 @@ VerificationTest[
 	,
 	Null
 	,
-	TestID->"18-List.nb"
+	TestID->"14-List.nb"
 ]
 
 VerificationTest[
@@ -162,7 +130,7 @@ VerificationTest[
 	,
 	Association["f" -> Association["x" -> "fx", "y" -> "fy", "z" -> "fz"], "g" -> Association["x" -> "gx", "y" -> "gy", "z" -> "gz"]]
 	,
-	TestID->"19-List.nb"
+	TestID->"15-List.nb"
 ]
 
 VerificationTest[
@@ -170,7 +138,7 @@ VerificationTest[
 	,
 	Association["f" -> {"fx", "fy", "fz"}, "g" -> {"gx", "gy", "gz"}]
 	,
-	TestID->"20-List.nb"
+	TestID->"16-List.nb"
 ]
 
 VerificationTest[
@@ -178,7 +146,7 @@ VerificationTest[
 	,
 	{Association["x" -> "fx", "y" -> "fy", "z" -> "fz"], Association["x" -> "gx", "y" -> "gy", "z" -> "gz"]}
 	,
-	TestID->"21-List.nb"
+	TestID->"17-List.nb"
 ]
 
 VerificationTest[
